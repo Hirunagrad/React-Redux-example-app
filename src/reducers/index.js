@@ -1,7 +1,7 @@
-import { combinedReducers } from "redux";
+import { combineReducers } from "redux";
 import AllPostReducer from "./reducer-Allpost";
 
-const rootReducer = combinedReducers({
+const rootReducer = combineReducers({
   allPost: AllPostReducer,
 });
 
