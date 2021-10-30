@@ -1,7 +1,7 @@
 import React from "react";
 import { FETCH_BUTTON_CLICKED } from "./type";
 
-export const fetchPost = () => {
+export const fetchPosts = () => {
   return {
     type: FETCH_BUTTON_CLICKED,
     payload: [
