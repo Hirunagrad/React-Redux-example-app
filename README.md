@@ -1,1 +1,1 @@
-# React-Redux-example-app
+# React-redux-Cycle
