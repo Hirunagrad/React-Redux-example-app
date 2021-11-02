@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
+import { selectPost } from "../actions/postAction";
 
 class PostList extends Component {
   createListItems() {
@@ -26,4 +28,8 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(PostList);
+function matchDispatchToProps(dispatch) {
+  return bindActionCreators({ selectPost: selectPost }, dispatch);
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(PostList);

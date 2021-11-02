@@ -1,5 +1,7 @@
 import React from "react";
 import { FETCH_BUTTON_CLICKED } from "./type";
+import { SELECT_POST } from "./type";
+import axios from "axios";
 
 export const fetchPosts = () => {
   return {
@@ -37,5 +39,12 @@ export const fetchPosts = () => {
         body: "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
       },
     ],
+  };
+};
+
+export const selectPost = (post) => {
+  return {
+    type: SELECT_POST,
+    payload: post,
   };
 };
